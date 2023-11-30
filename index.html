@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="Stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/754957c47f.js" crossorigin="anonymous"></script
+    </head>
+
+    <body>
+    <div id="header">
+    <div class="container">
+     <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a> </li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#projects">Projects</a> </li>
+            <li><a href="#portfolio">Portfolio</a> </li>
+            <li><a href="#contact">Contact</a> </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+     </nav>
+        <div class="header-text">
+            <p > Software Engineer</p>
+            <h1>Hi, I am <br><span>Prathima G Iyer</span></h1>
+        </div>
+    </div>
+    </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me </h1>
+                <p>Hello, I'm a passionate computer science and engineering student. Fueled by love for problem-solving and curiosity about the digital world, I'm excited to delve into the dynamic and ever-evolving field of technology. With a commitment to ethical innovation and a belief in collaborative learning, I look forward to making a meaningful impact as I navigate this exciting academic journey.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                    <li><span>2020-2024</span><br></span>BE from Bangalore Institute of Technology</li>
+                    <li><span>2018-2020</span><br>Vidya Mandir Ind PU College</li>
+                    <li><span>2018</span><br>The New Cambridge English School</li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                    <li><span>ML</span><br></span>Machine-Learning</li>
+                    <li><span>Programming-languages:</span><br>
+                    <ol >
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+
+                    </li>
+                    <li><span>SQL</span><br>Structured Query Language</li>
+                </ul>
+                </div>
+                <div class="tab-contents " id="internships">
+                    <ul>
+                    <li><span>CODOT</span><br></span>Content Writer<br>contributed to the story"A for AIESEC ,  
+                         B for leadership"</li>
+                </ul>
+                </div>
+            </div>
+             
+        </div>
+        
+    </div>
+   </div>
+   <!- --services--- ->
+   <div id="projects">
+    <div class="container">
+          <h1 class="sub-title">My Projects </h1>
+          <div class="project-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>KeyLoggers</h2>
+                <p>A Software application that records the keys pressed by the user unless “Escape” key is pressed.The Programming language used is Python.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>License Plate Detection</h2>
+                <p>The main aim is to extract the license plate from the vehicle images using Image processing techniques.<br>This project displays the extracted license plate region to users.</p>      
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Text-Editor</h2>
+                <p>This project demonstrates the various file attributes.<br> deals with various operations on a file like opening a file, reading, or writing to a file or merging two or more files.
+                    </p>  
+                    <a href="#">Learn more</a>    
+            </div>
+          </div>
+    </div>
+   </div>
+
+ <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+            <div class="work">
+                <img src="images/image1.png">
+                <div class="layer">
+                    <h3>KeyLoggers</h3>
+                    <p>This application helps to record every key pressed on keyboard.All the keys pressed are added to a list and then printed to a file which is opened in <em>"write"</em> mode unless the <em> Escape key</em>  is presed..</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>"</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image2a.png">
+                <div class="layer">
+                    <h3>License Plate Detection</h3>
+                    <p>This application processes the input vehicle image with image-processing algorithms like bilateral filtering,edge detection algorithms and contour detections.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>"</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image3a (1).png">
+                <div class="layer">
+                    <h3>Text-Editor</h3>
+                    <p>This application allows the user to create a file,add contents to a file, merge two files and save it in a third file or delete a file based on the user's choice.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>"</a>
+                </div>
+            </div>
+            </div>
+            
+            <a href="#" class="btn">See more</a>
+            </div>
+
+        </div>
+<!-- --contacts-- --->
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left"> 
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>prathima.iyer132@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9538680339</p>
+                    <a href="images/Prathima_G_Iyer_1BI20CS128.pdf" download class="btn btn2">Download CV</a>
+        </div> 
+        <div class="contact-right"> 
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" >
+                <input type="email" name="Email" placeholder="Your Email">
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div> 
+      </div>
+
+
+    </div>
+<div class="copyright">
+    <p>copyright @ Prathima G Iyer  <i class="fa-solid fa-heart"></i></p>
+</div>
+
+</div>
+
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   </script>
+   <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+                sidemenu.style.right="0";
+        }
+        function closemenu(){
+                sidemenu.style.right="-200px";
+        }
+
+   </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4t-6I-kdY5ovqxIua28Nt9k08g2qoCbvKnDrsG6D4tqAjG88NfzWiJNtVgL40rzYT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                    msg.innerHTML="";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
